@@ -637,53 +637,283 @@ get_header(); ?>
     </div>
 </div>
 
-<div></div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="home_video_sec">
+    <div class="video-wrap">
+        <video disableRemotePlayback loop playsinline muted autoplay="">
+            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-video-fullscreen.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+<div class="home_sec4 home_last_slider">
+    <div class="container">
+
+        <div class="wrapp1">
+            <div class="arows_wrap">
+                <div class="arrow arrow1">Prev</div>
+                <div class="arrow arrow2">Next</div>
+            </div>
+
+            <div class="subtitle">
+                <h3>Testimonial</h3>
+            </div>
+            <div class="global_title">
+                <h2 class="line1">What Our</h2>
+                <h2 class="line2">Clients</h2>
+                <h2 class="line1">Say</h2>
+            </div>
+
+        </div>
+
+        <div class="slider_wrap">
+            <div class="owl-carousel image_slider2 owl-theme">
+
+                <div class="item_box">
+                    <div class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-stars-clients-statements.svg" alt="">
+
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="person_wrap">
+                            <div class="image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/profile-pic-clients-statements.jpg" alt="">
+
+                            </div>
+                            <div class="name_wrap">
+                                <div class="name">Mara Musterfrau, MBA</div>
+                                <div class="function">Position, Musterland</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-stars-clients-statements.svg" alt="">
+
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="person_wrap">
+                            <div class="image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/profile-pic-clients-statements.jpg" alt="">
+
+                            </div>
+                            <div class="name_wrap">
+                                <div class="name">Mara Musterfrau, MBA</div>
+                                <div class="function">Position, Musterland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-stars-clients-statements.svg" alt="">
+
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="person_wrap">
+                            <div class="image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/profile-pic-clients-statements.jpg" alt="">
+
+                            </div>
+                            <div class="name_wrap">
+                                <div class="name">Mara Musterfrau, MBA</div>
+                                <div class="function">Position, Musterland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-stars-clients-statements.svg" alt="">
+
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="person_wrap">
+                            <div class="image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/profile-pic-clients-statements.jpg" alt="">
+
+                            </div>
+                            <div class="name_wrap">
+                                <div class="name">Mara Musterfrau, MBA</div>
+                                <div class="function">Position, Musterland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-stars-clients-statements.svg" alt="">
+
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                        <div class="person_wrap">
+                            <div class="image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/profile-pic-clients-statements.jpg" alt="">
+
+                            </div>
+                            <div class="name_wrap">
+                                <div class="name">Mara Musterfrau, MBA</div>
+                                <div class="function">Position, Musterland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item_box">
+                    <div class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-stars-clients-statements.svg" alt="">
+
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="person_wrap">
+                            <div class="image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/profile-pic-clients-statements.jpg" alt="">
+
+                            </div>
+                            <div class="name_wrap">
+                                <div class="name">Mara Musterfrau, MBA</div>
+                                <div class="function">Position, Musterland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<script>
+    $(window).on('load', function() {
+        let owl2 = $('.owl-carousel.image_slider2').owlCarousel({
+
+            dots: true,
+            loop: true,
+            margin: 70,
+            autoWidth: true,
+
+
+
+        });
+
+        $('.home_sec4 .wrapp1 .arows_wrap .arrow.arrow1').click(function() {
+            owl2.trigger('prev.owl.carousel');
+        })
+        $('.home_sec4 .wrapp1 .arows_wrap .arrow.arrow2').click(function() {
+            owl2.trigger('next.owl.carousel');
+        })
+    });
+</script>
+
+
+<div class="home_sec7">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapp1">
+                    <div class="subtitle">
+                        <h3>Rauch Team</h3>
+                    </div>
+                    <div class="global_title">
+                        <h2 class="line1">Because</h2>
+                        <h2 class="line2">we care</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="wrapp2">
+                    <div class="video-wrap">
+                        <video disableRemotePlayback loop playsinline muted autoplay="">
+                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-video-team.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="content_box">
+                        <div class="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-team-red-mark.svg" alt="">
+
+                        </div>
+
+                        <div class="text">
+                            <p>„Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.“</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="home_sec8">
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="wrapper">
+                <div class="arr_brn">
+                    <a href="#">Zum Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <br>
 
 <?php get_footer(); ?>
