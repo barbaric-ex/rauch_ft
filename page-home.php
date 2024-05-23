@@ -5,6 +5,8 @@ Template Name: Page Home
 get_header(); ?>
 
 
+
+
 <div class="home_sec1">
     <div class="video-wrap">
         <video disableRemotePlayback loop playsinline muted autoplay="">
@@ -100,11 +102,35 @@ get_header(); ?>
 </div>
 
 
-<!--running text here-->
+
 
 <div class="home_sec2">
 
+    <div class="scrolling_text">
+        <div class="text_to_scroll">
+            <h2 class="marquee1">DRUCKGUSS RECYCLING ALLOYING</h2>
+        </div>
+    </div>
+
 </div>
+
+<script type="text/javascript">
+    $(function() {
+        var speed_text;
+        if ($(window).width() < 991) {
+            speed_text = 300;
+        } else {
+            speed_text = 300;
+        }
+        console.log(speed_text)
+        $('.marquee1').marquee({
+            gap: 50,
+            duplicated: true,
+            speed: speed_text,
+
+        });
+    });
+</script>
 
 
 
@@ -263,7 +289,7 @@ get_header(); ?>
     </div>
 </div>
 
-
+<!---
 <div class="home_sec4">
     <div class="container">
 
@@ -534,7 +560,7 @@ get_header(); ?>
 
             <div class="col_lg-12">
 
-                <!--slider sa godinama----->
+                
 
             </div>
 
@@ -913,7 +939,7 @@ get_header(); ?>
 </div>
 
 
-
+-->
 <br>
 
 <?php get_footer(); ?>
