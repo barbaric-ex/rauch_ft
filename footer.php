@@ -1,4 +1,3 @@
-<!---
 <div class="footer_section">
 	<div class="video-wrap">
 		<video disableRemotePlayback loop playsinline muted autoplay="">
@@ -9,8 +8,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="global_title">
-					<h2 class="line1">Contact</h2>
-					<h2 class="line2">Us</h2>
+					<h2 class="line1">Contact <span>Us</span></h2>
 				</div>
 				<div class="form_wrapp">
 					<?php echo do_shortcode('[advanced_form form="form_664dc6262717d"]'); ?>
@@ -50,7 +48,7 @@
 			<div class="row">
 
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="wrap">
 						<div class="main_title">
 							<h2>Headquarter</h2>
@@ -74,7 +72,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="wrap">
 						<div class="main_title">
 							<h2>Headquarter</h2>
@@ -98,7 +96,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="wrap">
 						<div class="main_title">
 							<h2>Headquarter</h2>
@@ -122,7 +120,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="wrap">
 						<div class="main_title">
 							<h2>Headquarter</h2>
@@ -146,7 +144,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="wrap">
 						<div class="main_title">
 							<h2>Headquarter</h2>
@@ -170,7 +168,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="wrap">
 						<div class="main_title">
 							<h2>Headquarter</h2>
@@ -233,7 +231,7 @@
 
 </div>
 
---->
+
 </div>
 
 

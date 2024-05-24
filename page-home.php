@@ -23,8 +23,7 @@ get_header(); ?>
                             <h3 class="line line2">Gen</h2>
                     </div>
                     <div class="title_wrap">
-                        <h2 class="line line1">MELT WITH</h2>
-                        <h2 class="line line2">TRUST</h2>
+                        <h2 class="line line1">MELT WITH <span>TRUST</span></h2>
                     </div>
 
                     <div class="content_wrap">
@@ -289,7 +288,7 @@ get_header(); ?>
     </div>
 </div>
 
-<!---
+
 <div class="home_sec4">
     <div class="container">
 
@@ -468,6 +467,8 @@ get_header(); ?>
 </div>
 
 
+
+
 <div class="home_sec6">
     <div class="video-wrap">
         <video disableRemotePlayback loop playsinline muted autoplay="">
@@ -483,8 +484,7 @@ get_header(); ?>
                     </div>
 
                     <div class="global_title">
-                        <h2 class="line1">Lorem Ipsum</h2>
-                        <h2 class="line2">Vision und Grundsätze</h2>
+                        <h2 class="line1">Lorem Ipsum <span>Vision und Grundsätze</span></h2>
                     </div>
 
 
@@ -560,7 +560,7 @@ get_header(); ?>
 
             <div class="col_lg-12">
 
-                
+
 
             </div>
 
@@ -656,6 +656,8 @@ get_header(); ?>
     </div>
 </div>
 
+
+
 <div class="home_map_sec">
     <div class="image">
         <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Home/home-worldmap1.png" alt="">
@@ -674,6 +676,8 @@ get_header(); ?>
 
 
 
+
+
 <div class="home_sec4 home_last_slider">
     <div class="container">
 
@@ -687,9 +691,8 @@ get_header(); ?>
                 <h3>Testimonial</h3>
             </div>
             <div class="global_title">
-                <h2 class="line1">What Our</h2>
-                <h2 class="line2">Clients</h2>
-                <h2 class="line1">Say</h2>
+                <h2 class="line1">What Our <span>Clients</span> Say</h2>
+
             </div>
 
         </div>
@@ -895,8 +898,7 @@ get_header(); ?>
                         <h3>Rauch Team</h3>
                     </div>
                     <div class="global_title">
-                        <h2 class="line1">Because</h2>
-                        <h2 class="line2">we care</h2>
+                        <h2 class="line1">Because <span>we care</span></h2>
                     </div>
                 </div>
             </div>
@@ -926,6 +928,8 @@ get_header(); ?>
     </div>
 </div>
 
+
+
 <div class="home_sec8">
     <div class="container">
         <div class="col-lg-12">
@@ -939,7 +943,6 @@ get_header(); ?>
 </div>
 
 
--->
-<br>
+
 
 <?php get_footer(); ?>

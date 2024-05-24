@@ -44,11 +44,25 @@
 				</form>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-default fixed-top " id="mainNav">
+
+
+		<nav class="navbar navbar-expand-lg navbar-default fixed-top <?php if (is_front_page() || is_page('druckguss')) {
+																			echo 'white_navv';
+																		} ?>" id="mainNav">
 			<div class="container">
 				<div class="menu-btn"><button class="c-hamburger c-hamburger--htx"><span>toggle menu</span> </button></div>
-				<div class="logo animsition-link"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/logo-rauch-white.svg" alt="Name"></a></div>
+
+				<div class="logo animsition-link"><a href="<?php echo home_url(); ?>"><img src="<?php
+																								if (is_front_page() || is_page('druckguss')) {
+																									echo get_template_directory_uri() . '/img/0_Most_used_elements/logo-rauch-white.svg';
+																								} else {
+																									echo get_template_directory_uri() . '/img/0_Most_used_elements/logo-rauch-grey.svg';
+																								}
+																								?>" alt="Name"></a></div>
+
 				<div class="collapse navbar-collapse " id="navbarResponsive">
+
+
 					<?php
 					wp_nav_menu(array(
 						'theme_location'  => 'primary',
@@ -61,11 +75,28 @@
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					));
 					?>
+
+					<div class="search-wrap search-big-wrap">
+						<form role="search" method="get" id="searchform" class="searchform" action="/">
+							<input type="text" name="s" placeholder="Suche">
+							<div class="search-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/menue-bar-loupe-white.svg">
+
+							</div>
+						</form>
+					</div>
 				</div>
 
 				<div class="right-nav-items">
 					<div class="search uni search-main-btn">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/menue-bar-loupe-white.svg">
+
+						<img src="<?php
+									if (is_front_page() || is_page('druckguss')) {
+										echo get_template_directory_uri() . '/img/0_Most_used_elements/menue-bar-loupe-white.svg';
+									} else {
+										echo get_template_directory_uri() . '/img/0_Most_used_elements/menue-bar-loupe-grey.svg';
+									}
+									?>">
 					</div>
 
 
