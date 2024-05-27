@@ -60,17 +60,21 @@ get_header(); ?>
 
                 <div class="box_wrap">
 
+
                     <div class="video-wrap">
                         <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/team-video-member-dummy.mp4" type="video/mp4">
+                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
                         </video>
                     </div>
+
+                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
+
 
                     <div class="overlay_wrap"></div>
 
                     <div class="content">
                         <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/signet-red.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
 
                         </div>
 
@@ -88,17 +92,21 @@ get_header(); ?>
 
                 <div class="box_wrap">
 
+
                     <div class="video-wrap">
                         <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/team-video-member-dummy.mp4" type="video/mp4">
+                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
                         </video>
                     </div>
+
+                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
+
 
                     <div class="overlay_wrap"></div>
 
                     <div class="content">
                         <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/signet-red.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
 
                         </div>
 
@@ -116,17 +124,21 @@ get_header(); ?>
 
                 <div class="box_wrap">
 
+
                     <div class="video-wrap">
                         <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/team-video-member-dummy.mp4" type="video/mp4">
+                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
                         </video>
                     </div>
+
+                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
+
 
                     <div class="overlay_wrap"></div>
 
                     <div class="content">
                         <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/signet-red.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
 
                         </div>
 
@@ -140,21 +152,25 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 
                 <div class="box_wrap">
 
+
                     <div class="video-wrap">
                         <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/team-video-member-dummy.mp4" type="video/mp4">
+                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
                         </video>
                     </div>
+
+                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
+
 
                     <div class="overlay_wrap"></div>
 
                     <div class="content">
                         <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/signet-red.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
 
                         </div>
 
@@ -194,7 +210,7 @@ get_header(); ?>
 
             <div class="col-lg-6">
                 <div class="image_wrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage Team/wko-certificate.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/wko-certificate.jpg" alt="">
 
                 </div>
             </div>

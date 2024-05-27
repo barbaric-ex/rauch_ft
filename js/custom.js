@@ -59,6 +59,13 @@
     });
   });
 
+  $(window).on("load", function (e) {
+    $(".benefits_sec2 .accordion_wrap .title").click(function () {
+      $(this).siblings(".text").slideToggle(300);
+      $(this).toggleClass("active");
+    });
+  });
+
   $(document).ready(function () {
     $(".menu-btn button").click(function () {
       $(".navbar-collapse").toggleClass("navbar250");
