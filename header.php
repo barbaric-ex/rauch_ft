@@ -32,6 +32,39 @@
 
 <body id="page-top" <?php body_class(); ?>>
 	<div class="page-wrap">
+
+		<div class="fixed_social_wrap">
+			<div class="first">
+				<a href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-phone.svg">
+
+				</a>
+
+				<a href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-mail.svg">
+
+				</a>
+			</div>
+
+			<div class="second">
+				<a href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-linkedin.svg">
+
+				</a>
+
+
+				<a href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-facebook.svg">
+
+				</a>
+
+				<a href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-youtube.svg">
+
+				</a>
+			</div>
+
+		</div>
 		<div class="search-fixed-wrap">
 			<div class="close-btn-search">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/iconx.png">

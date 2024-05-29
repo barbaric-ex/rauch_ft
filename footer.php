@@ -43,7 +43,7 @@
 		});
 	</script>
 
-	<div class="footer_main_part" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/footer-r-signet.svg);">
+	<div id="kontakt" class="footer_main_part" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/footer-r-signet.svg);">
 		<div class="container">
 			<div class="row">
 

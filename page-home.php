@@ -158,116 +158,127 @@ get_header(); ?>
             </div>
 
             <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="line">
-                        <div class="inner_red"></div>
-                    </div>
-
-                    <div class="number_wrap">
-                        <div class="number">01</div>
-                    </div>
-
-                    <div class="text_wrap">
-                        <div class="title">
-                            <h3>Druckguss</h3>
+                <a href="/druckguss/">
+                    <div class="wrap">
+                        <div class="line">
+                            <div class="inner_red"></div>
                         </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        </div>
-                    </div>
 
-                </div>
+                        <div class="number_wrap">
+                            <div class="number">01</div>
+                        </div>
+
+                        <div class="text_wrap">
+                            <div class="title">
+                                <h3>Druckguss</h3>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
             </div>
 
 
             <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="line">
-                        <div class="inner_red"></div>
-                    </div>
-
-                    <div class="number_wrap">
-                        <div class="number">02</div>
-                    </div>
-
-                    <div class="text_wrap">
-                        <div class="title">
-                            <h3>Recycling / Alloying</h3>
+                <a href="/recycling/alloying/">
+                    <div class="wrap">
+                        <div class="line">
+                            <div class="inner_red"></div>
                         </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        </div>
-                    </div>
 
-                </div>
+                        <div class="number_wrap">
+                            <div class="number">02</div>
+                        </div>
+
+                        <div class="text_wrap">
+                            <div class="title">
+                                <h3>Recycling / Alloying</h3>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
             </div>
 
 
             <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="line">
-                        <div class="inner_red"></div>
-                    </div>
-
-                    <div class="number_wrap">
-                        <div class="number">03</div>
-                    </div>
-
-                    <div class="text_wrap">
-                        <div class="title">
-                            <h3>Sandguss</h3>
+                <a href="/sandguss/">
+                    <div class="wrap">
+                        <div class="line">
+                            <div class="inner_red"></div>
                         </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        </div>
-                    </div>
 
-                </div>
+                        <div class="number_wrap">
+                            <div class="number">03</div>
+                        </div>
+
+                        <div class="text_wrap">
+                            <div class="title">
+                                <h3>Sandguss</h3>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
             </div>
 
 
             <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="line">
-                        <div class="inner_red"></div>
-                    </div>
-
-                    <div class="number_wrap">
-                        <div class="number">04</div>
-                    </div>
-
-                    <div class="text_wrap">
-                        <div class="title">
-                            <h3>Customer Engineering</h3>
+                <a href="/customer-engineering/">
+                    <div class="wrap">
+                        <div class="line">
+                            <div class="inner_red"></div>
                         </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        </div>
-                    </div>
 
-                </div>
+                        <div class="number_wrap">
+                            <div class="number">04</div>
+                        </div>
+
+                        <div class="text_wrap">
+                            <div class="title">
+                                <h3>Customer Engineering</h3>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
             </div>
 
             <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="line">
-                        <div class="inner_red"></div>
-                    </div>
+                <a href="/schutzgasmischanlage/">
 
-                    <div class="number_wrap">
-                        <div class="number">05</div>
-                    </div>
-
-                    <div class="text_wrap">
-                        <div class="title">
-                            <h3>Schutzgasmischanlage</h3>
+                    <div class="wrap">
+                        <div class="line">
+                            <div class="inner_red"></div>
                         </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        </div>
-                    </div>
 
-                </div>
+                        <div class="number_wrap">
+                            <div class="number">05</div>
+                        </div>
+
+                        <div class="text_wrap">
+                            <div class="title">
+                                <h3>Schutzgasmischanlage</h3>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
             </div>
 
 
