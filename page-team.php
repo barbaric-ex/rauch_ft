@@ -4,35 +4,62 @@ Template Name: Page Team
 */
 get_header(); ?>
 
-<div class="team_sec1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="global_title sub_global_title">
-                        <h2 class="line1">LOREM IPSUM AMET CONSER<span>OUR TEAM.</span> </h2>
+<?php if (have_rows('content_1')) : ?>
+    <?php while (have_rows('content_1')) : the_row();
+        $title = get_sub_field('title');
+        $text = get_sub_field('text');
 
-                    </div>
+    ?>
 
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        <div class="team_sec1 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="wrap">
+                            <?php if ($title) : ?>
+                                <div class="global_title sub_global_title wow fadeInLeft " data-wow-delay="0.5s" data-wow-duration="0.6s">
+                                    <h2 class="line1"> <?php echo $title ?> </h2>
+
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if ($text) : ?>
+                                <div class="text wow fadeInLeft " data-wow-delay="0.6s" data-wow-duration="0.6s">
+                                    <?php echo $text ?>
+                                </div>
+                            <?php endif; ?>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    <?php endwhile; ?>
+<?php endif; ?>
 
 
-<div class="home_sec2 team_sec2">
 
-    <div class="scrolling_text">
-        <div class="text_to_scroll">
-            <h2 class="marquee1">VERTRAUEN RESPEKT ZUSAMMENHALT INNOVATION ZUVERLÄSSIGKEIT GLAUBWÜRDIGKEIT SICHERHEIT</h2>
+
+<?php if (have_rows('content_2')) : ?>
+    <?php while (have_rows('content_2')) : the_row();
+        $scroll_text = get_sub_field('scroll_text');
+
+    ?>
+        <div class="home_sec2 team_sec2 ">
+
+            <div class="scrolling_text">
+                <div class="text_to_scroll">
+                    <?php if ($scroll_text) : ?>
+                        <h2 class="marquee1"><?php echo $scroll_text ?></h2>
+                </div>
+            <?php endif; ?>
+
+            </div>
+
         </div>
-    </div>
 
-</div>
+    <?php endwhile; ?>
+<?php endif; ?>
 
 <script type="text/javascript">
     $(function() {
@@ -52,172 +79,129 @@ get_header(); ?>
     });
 </script>
 
+<?php if (have_rows('content_3')) : ?>
+    <?php while (have_rows('content_3')) : the_row();
+        $title = get_sub_field('title');
+        $text = get_sub_field('text');
 
-<div class="team_sec3">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+    ?>
+        <div class="team_sec3">
+            <div class="container">
+                <div class="row">
 
-                <div class="box_wrap">
+                    <?php if (have_rows('team_box')) : ?>
+                        <?php while (have_rows('team_box')) : the_row();
+                            $video = get_sub_field('video');
+                            $image = get_sub_field('image');
 
+                            $name = get_sub_field('name');
+                            $function = get_sub_field('function');
 
-                    <div class="video-wrap">
-                        <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                        ?>
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.6s">
 
-                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
+                                <div class="box_wrap">
 
+                                    <?php if ($video) : ?>
+                                        <div class="video-wrap">
+                                            <video disableRemotePlayback loop playsinline muted autoplay="">
+                                                <source src="<?php echo $video ?>" type="video/mp4">
+                                            </video>
+                                        </div>
 
-                    <div class="overlay_wrap"></div>
+                                    <?php else : ?>
 
-                    <div class="content">
-                        <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
+                                        <div class="image_wrap1" style="background-image: url(<?php echo $image['sizes']['medium']; ?>);"></div>
+                                    <?php endif; ?>
 
-                        </div>
+                                    <div class="overlay_wrap"></div>
 
-                        <div class="name">Dr. Michael Mustermann</div>
-                        <div class="function">Funktion</div>
+                                    <div class="content">
+                                        <div class="image">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
 
-                        <a href="mailto:mustermann@rauch-ft.com">mustermann@rauch-ft.com</a>
-                    </div>
+                                        </div>
+                                        <?php if ($name) : ?>
+                                            <div class="name"><?php echo $name ?></div>
+                                        <?php endif; ?>
 
+                                        <?php if ($function) : ?>
+                                            <div class="function"><?php echo $function ?></div>
+                                        <?php endif; ?>
 
-                </div>
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="box_wrap">
-
-
-                    <div class="video-wrap">
-                        <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
-
-
-                    <div class="overlay_wrap"></div>
-
-                    <div class="content">
-                        <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
-
-                        </div>
-
-                        <div class="name">Dr. Michael Mustermann</div>
-                        <div class="function">Funktion</div>
-
-                        <a href="mailto:mustermann@rauch-ft.com">mustermann@rauch-ft.com</a>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="box_wrap">
-
-
-                    <div class="video-wrap">
-                        <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
-
-
-                    <div class="overlay_wrap"></div>
-
-                    <div class="content">
-                        <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
-
-                        </div>
-
-                        <div class="name">Dr. Michael Mustermann</div>
-                        <div class="function">Funktion</div>
-
-                        <a href="mailto:mustermann@rauch-ft.com">mustermann@rauch-ft.com</a>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="box_wrap">
-
-
-                    <div class="video-wrap">
-                        <video disableRemotePlayback loop playsinline muted autoplay="">
-                            <source src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/team-video-member-dummy.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <!-- <div class="image_wrap1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/home_content/Home/your-benefit-preview-innovation.jpg);"></div> -->
-
-
-                    <div class="overlay_wrap"></div>
-
-                    <div class="content">
-                        <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/signet-red.svg" alt="">
-
-                        </div>
-
-                        <div class="name">Dr. Michael Mustermann</div>
-                        <div class="function">Funktion</div>
-
-                        <a href="mailto:mustermann@rauch-ft.com">mustermann@rauch-ft.com</a>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
+                                        <?php
+                                        $link = get_sub_field('email');
+                                        if ($link) :
+                                            $link_url = $link['url'];
+                                            $link_title = $link['title'];
+                                            $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
 
 
 
-<div class="team_sec1 team_sec4">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="wrap">
-                    <div class="global_title sub_global_title">
-                        <h2 class="line1">LOREM IPSUM AMET CONSER<span>KARRIERE.</span> </h2>
+                                            <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
 
-                    </div>
 
-                    <div class="text">
-                        <p>Wollen Sie Teil eines jungen, dynamischen Teams werden? Dann sind Sie bei uns genau richtig! Senden Sie Ihre Initiativbewerbung jederzeit an personal@rauch-ft.com</p>
-                        <p>Bewerbungen für 2025 werden entgegengenommen für: Lehrling - Elektrotechniker/in mit Schwerpunkt Anlagen- und Betriebstechnik</p>
-                    </div>
-                </div>
-            </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
 
-            <div class="col-lg-6">
-                <div class="image_wrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/home_content/Subpage_Team/wko-certificate.jpg" alt="">
+
+
 
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    <?php endwhile; ?>
+<?php endif; ?>
 
+
+<?php if (have_rows('content_4')) : ?>
+    <?php while (have_rows('content_4')) : the_row();
+        $title = get_sub_field('title');
+        $text = get_sub_field('text');
+        $image = get_sub_field('image');
+
+    ?>
+        <div class="team_sec1 team_sec4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="wrap">
+                            <?php if ($title) : ?>
+                                <div class="global_title sub_global_title wow fadeInLeft " data-wow-delay="0.5s" data-wow-duration="0.6s">
+                                    <h2 class="line1"><?php echo $title ?> </h2>
+
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if ($text) : ?>
+                                <div class="text wow fadeInLeft " data-wow-delay="0.6s" data-wow-duration="0.6s">
+                                    <?php echo $text ?>
+                                </div>
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <?php if ($image) : ?>
+                            <div class="image_wrap wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="0.6s">
+                                <img src="<?php echo $image['sizes']['medium']; ?>" alt="">
+
+                            </div>
+                        <?php endif; ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endwhile; ?>
+<?php endif; ?>
 
 
 

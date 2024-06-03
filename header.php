@@ -33,38 +33,111 @@
 <body id="page-top" <?php body_class(); ?>>
 	<div class="page-wrap">
 
-		<div class="fixed_social_wrap">
-			<div class="first">
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-phone.svg">
 
-				</a>
+		<?php if (have_rows('content_2', 'options')) : ?>
+			<?php while (have_rows('content_2', 'options')) : the_row();
 
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-mail.svg">
-
-				</a>
-			</div>
-
-			<div class="second">
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-linkedin.svg">
-
-				</a>
+				$scrolling_text = get_sub_field('scrolling_text');
+				$background_video = get_sub_field('background_video');
 
 
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-facebook.svg">
 
-				</a>
 
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-youtube.svg">
 
-				</a>
-			</div>
 
-		</div>
+			?>
+
+				<div class="fixed_social_wrap">
+					<div class="first">
+						<?php
+						$link = get_sub_field('tel');
+						if ($link) :
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
+						?>
+
+
+
+							<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-phone.svg">
+
+							</a>
+						<?php endif; ?>
+
+						<?php
+						$link = get_sub_field('email');
+						if ($link) :
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
+						?>
+
+
+
+							<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-mail.svg">
+
+							</a>
+						<?php endif; ?>
+					</div>
+
+					<div class="second">
+						<?php
+						$link = get_sub_field('linkedin');
+						if ($link) :
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
+						?>
+
+
+
+							<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-linkedin.svg">
+
+							</a>
+						<?php endif; ?>
+
+
+						<?php
+						$link = get_sub_field('facebook');
+						if ($link) :
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
+						?>
+
+
+
+							<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-facebook.svg">
+
+							</a>
+						<?php endif; ?>
+
+						<?php
+						$link = get_sub_field('youtube');
+						if ($link) :
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
+						?>
+
+
+
+							<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/scroll-button-youtube.svg">
+
+							</a>
+						<?php endif; ?>
+					</div>
+
+				</div>
+			<?php
+			endwhile; ?>
+		<?php endif; ?>
+
 		<div class="search-fixed-wrap">
 			<div class="close-btn-search">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/iconx.png">

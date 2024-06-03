@@ -1,9 +1,29 @@
 <div class="footer_section">
-	<div class="video-wrap">
-		<video disableRemotePlayback loop playsinline muted autoplay="">
-			<source src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/footer-video.mp4" type="video/mp4">
-		</video>
-	</div>
+
+	<?php if (have_rows('content_1', 'options')) : ?>
+		<?php while (have_rows('content_1', 'options')) : the_row();
+
+			$scrolling_text = get_sub_field('scrolling_text');
+			$background_video = get_sub_field('background_video');
+
+
+
+
+
+
+		?>
+			<?php if ($background_video) : ?>
+				<div class="video-wrap">
+					<video disableRemotePlayback loop playsinline muted autoplay="">
+						<source src="<?php echo $background_video ?>" type="video/mp4">
+					</video>
+				</div>
+			<?php endif; ?>
+
+
+		<?php
+		endwhile; ?>
+	<?php endif; ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -16,13 +36,29 @@
 			</div>
 		</div>
 	</div>
+	<?php if (have_rows('content_1', 'options')) : ?>
+		<?php while (have_rows('content_1', 'options')) : the_row();
 
-	<div class="scroll_text_wrap">
-		<div class="scroll_text">
-			<h2 class="marquee">DRUCKGUSS RECYCLING ALLOYING</h2>
-		</div>
-	</div>
+			$scrolling_text = get_sub_field('scrolling_text');
+			$background_video = get_sub_field('background_video');
 
+
+
+
+
+
+		?>
+			<div class="scroll_text_wrap">
+				<div class="scroll_text">
+					<?php if ($scrolling_text) : ?>
+						<h2 class="marquee"><?php echo $scrolling_text ?></h2>
+					<?php endif; ?>
+
+				</div>
+			</div>
+		<?php
+		endwhile; ?>
+	<?php endif; ?>
 
 
 	<script type="text/javascript">
@@ -43,191 +79,171 @@
 		});
 	</script>
 
-	<div id="kontakt" class="footer_main_part" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/footer-r-signet.svg);">
-		<div class="container">
-			<div class="row">
+
+	<?php if (have_rows('content_2', 'options')) : ?>
+		<?php while (have_rows('content_2', 'options')) : the_row();
+
+			$scrolling_text = get_sub_field('scrolling_text');
+			$background_video = get_sub_field('background_video');
 
 
-				<div class="col-lg-4 col-md-6">
-					<div class="wrap">
-						<div class="main_title">
-							<h2>Headquarter</h2>
-						</div>
 
-						<div class="subtitle">
-							<h3>AUSTRIA</h3>
-						</div>
-						<div class="title2">
-							<h2>RAUCH Furnace Technology GmbH</h2>
-						</div>
 
-						<div class="text">
-							<p>Fichtenweg 3<br> 4810 Gmunden</p>
 
-							<a href="#">Tel: +43 7612 6 39 29-0</a>
-							<a href="#">Fax: +43 7612 6 39 29 - 22</a>
-							<a href="mailto:office@rauch-ft.com">office@rauch-ft.com</a>
-							<a href="www.rauch-ft.com">www.rauch-ft.com</a>
-						</div>
-					</div>
+
+		?>
+
+			<div id="kontakt" class="footer_main_part">
+
+				<div class="rsignet">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/0_Most_used_elements/footer-r-signet2.png" alt="name">
 				</div>
+				<div class="container">
+					<div class="row">
 
-				<div class="col-lg-4 col-md-6">
-					<div class="wrap">
-						<div class="main_title">
-							<h2>Headquarter</h2>
-						</div>
+						<?php if (have_rows('info_box')) : ?>
+							<?php while (have_rows('info_box')) : the_row();
 
-						<div class="subtitle">
-							<h3>AUSTRIA</h3>
-						</div>
-						<div class="title2">
-							<h2>RAUCH Furnace Technology GmbH</h2>
-						</div>
+								$title_1 = get_sub_field('title_1');
+								$title_2 = get_sub_field('title_2');
 
-						<div class="text">
-							<p>Fichtenweg 3<br> 4810 Gmunden</p>
+								$title_3 = get_sub_field('title_3');
+								$info = get_sub_field('info');
 
-							<a href="#">Tel: +43 7612 6 39 29-0</a>
-							<a href="#">Fax: +43 7612 6 39 29 - 22</a>
-							<a href="mailto:office@rauch-ft.com">office@rauch-ft.com</a>
-							<a href="www.rauch-ft.com">www.rauch-ft.com</a>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-4 col-md-6">
-					<div class="wrap">
-						<div class="main_title">
-							<h2>Headquarter</h2>
-						</div>
 
-						<div class="subtitle">
-							<h3>AUSTRIA</h3>
-						</div>
-						<div class="title2">
-							<h2>RAUCH Furnace Technology GmbH</h2>
-						</div>
 
-						<div class="text">
-							<p>Fichtenweg 3<br> 4810 Gmunden</p>
 
-							<a href="#">Tel: +43 7612 6 39 29-0</a>
-							<a href="#">Fax: +43 7612 6 39 29 - 22</a>
-							<a href="mailto:office@rauch-ft.com">office@rauch-ft.com</a>
-							<a href="www.rauch-ft.com">www.rauch-ft.com</a>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-4 col-md-6">
-					<div class="wrap">
-						<div class="main_title">
-							<h2>Headquarter</h2>
-						</div>
+							?>
 
-						<div class="subtitle">
-							<h3>AUSTRIA</h3>
-						</div>
-						<div class="title2">
-							<h2>RAUCH Furnace Technology GmbH</h2>
-						</div>
 
-						<div class="text">
-							<p>Fichtenweg 3<br> 4810 Gmunden</p>
+								<div class="col-lg-4 col-md-6">
+									<div class="wrap">
+										<?php if ($title_1) : ?>
+											<div class="main_title wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.6s">
+												<h2><?php echo $title_1 ?></h2>
+											</div>
+										<?php endif; ?>
 
-							<a href="#">Tel: +43 7612 6 39 29-0</a>
-							<a href="#">Fax: +43 7612 6 39 29 - 22</a>
-							<a href="mailto:office@rauch-ft.com">office@rauch-ft.com</a>
-							<a href="www.rauch-ft.com">www.rauch-ft.com</a>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-4 col-md-6">
-					<div class="wrap">
-						<div class="main_title">
-							<h2>Headquarter</h2>
-						</div>
+										<?php if ($title_2) : ?>
+											<div class="subtitle wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.6s">
+												<h3><?php echo $title_2 ?></h3>
+											</div>
+										<?php endif; ?>
 
-						<div class="subtitle">
-							<h3>AUSTRIA</h3>
-						</div>
-						<div class="title2">
-							<h2>RAUCH Furnace Technology GmbH</h2>
-						</div>
 
-						<div class="text">
-							<p>Fichtenweg 3<br> 4810 Gmunden</p>
+										<?php if ($title_3) : ?>
+											<div class="title2 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.6s">
+												<h2><?php echo $title_3 ?></h2>
+											</div>
+										<?php endif; ?>
 
-							<a href="#">Tel: +43 7612 6 39 29-0</a>
-							<a href="#">Fax: +43 7612 6 39 29 - 22</a>
-							<a href="mailto:office@rauch-ft.com">office@rauch-ft.com</a>
-							<a href="www.rauch-ft.com">www.rauch-ft.com</a>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-4 col-md-6">
-					<div class="wrap">
-						<div class="main_title">
-							<h2>Headquarter</h2>
-						</div>
+										<?php if ($info) : ?>
+											<div class="text wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="0.6s">
+												<?php echo $info ?>
+											</div>
+										<?php endif; ?>
 
-						<div class="subtitle">
-							<h3>AUSTRIA</h3>
-						</div>
-						<div class="title2">
-							<h2>RAUCH Furnace Technology GmbH</h2>
-						</div>
 
-						<div class="text">
-							<p>Fichtenweg 3<br> 4810 Gmunden</p>
+									</div>
+								</div>
+							<?php
+							endwhile; ?>
+						<?php endif; ?>
 
-							<a href="#">Tel: +43 7612 6 39 29-0</a>
-							<a href="#">Fax: +43 7612 6 39 29 - 22</a>
-							<a href="mailto:office@rauch-ft.com">office@rauch-ft.com</a>
-							<a href="www.rauch-ft.com">www.rauch-ft.com</a>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-12">
-					<div class="links_wrap">
-						<div class="line">
-							<div class="iner_red"></div>
-						</div>
+						<div class="col-lg-12">
+							<div class="links_wrap">
+								<div class="line">
+									<div class="iner_red"></div>
+								</div>
 
-						<div class="links">
-							<div class="first">
-								<a href="#">LinkedIn</a>
-								<a href="#">Facebook</a>
-								<a href="#">Youtube</a>
-							</div>
+								<div class="links">
+									<div class="first">
+										<?php
+										$link = get_sub_field('linkedin');
+										if ($link) :
+											$link_url = $link['url'];
+											$link_title = $link['title'];
+											$link_target = $link['target'] ? $link['target'] : '_self';
+										?>
 
-							<div class="second">
-								<a href="#">Impressum</a>
-								<a href="#">Datenschutz</a>
-								<a href="#">ABG</a>
+
+
+											<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+										<?php endif; ?>
+
+
+										<?php
+										$link = get_sub_field('facebook');
+										if ($link) :
+											$link_url = $link['url'];
+											$link_title = $link['title'];
+											$link_target = $link['target'] ? $link['target'] : '_self';
+										?>
+
+
+
+											<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+										<?php endif; ?>
+
+
+										<?php
+										$link = get_sub_field('youtube');
+										if ($link) :
+											$link_url = $link['url'];
+											$link_title = $link['title'];
+											$link_target = $link['target'] ? $link['target'] : '_self';
+										?>
+
+
+
+											<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+										<?php endif; ?>
+
+
+									</div>
+
+									<div class="second">
+										<?php
+										$link = get_sub_field('impressum');
+										if ($link) :
+											$link_url = $link['url'];
+											$link_title = $link['title'];
+											$link_target = $link['target'] ? $link['target'] : '_self';
+										?>
+
+
+
+											<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+										<?php endif; ?>
+
+									</div>
+								</div>
 							</div>
 						</div>
+
+
+
 					</div>
 				</div>
-
-
-
 			</div>
-		</div>
-	</div>
 
 
-	<div class="footer_bottom">
-		<div class="first">
-			<p>
-				<a href="#">created by ADAM Communication</a>
-			</p>
-		</div>
-	</div>
+			<div class="footer_bottom">
+				<div class="first">
+					<p>
+						<a href="#">created by ADAM Communication</a>
+					</p>
+				</div>
+			</div>
+
+		<?php
+		endwhile; ?>
+	<?php endif; ?>
 
 </div>
 
